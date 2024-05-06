@@ -3,10 +3,10 @@ var n1;
 let n2;
 
 
-var nome = "Davi";
+var n4 = "Davi";
 if (true)
 {
-    var nome = "Rabelo"
+    var n5 = "Rabelo";
 }
-var nome = "Giani"
-console.log
+var n6 = "Giani";
+console.log(n4,n5,n6)
