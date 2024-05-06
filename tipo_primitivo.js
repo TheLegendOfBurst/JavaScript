@@ -15,10 +15,10 @@ var logico = true;
 var vnull = null;
 var indefinido;
 
-console.log(nome);
-console.log(numero);
-console.log(letra);
-console.log(decimal);
-console.log(logico);
-console.log(vnull);
-console.log(indefinido);
+console.log(typeof nome, nome);
+console.log(typeof numero, numero);
+console.log(typeof letra, letra);
+console.log(typeof decimal, decimal);
+console.log(typeof logico, logico);
+console.log(typeof vnull, vnull);
+console.log(typeof indefinido, indefinido);
