@@ -2,7 +2,7 @@ const n3 = 'Constante'
 var n1;
 let n2;
 
-
+/*
 var n4 = "Davi";
 if (true)
 {
@@ -10,3 +10,4 @@ if (true)
 }
 var n6 = "Giani";
 console.log(n4,n5,n6)
+*/
