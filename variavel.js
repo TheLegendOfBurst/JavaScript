@@ -12,12 +12,15 @@ var n6 = "Giani";
 console.log(n4,n5,n6)
 */
 
-//Let - variavel de escopo
+/*Let - variavel de escopo
 
 let nome = "Davi"
 if (true)
 {
     let nome = "Rabelo"
+    console.log(nome)
 }
- nome = "Giani"
-console.log(nome)
+*/
+
+//Constante - 
+
