@@ -14,9 +14,9 @@ let texto = `O Cliente ${dono} tem o seguinte numero de celular ${ddd} ${telefon
 console.log(texto);
 
 //Idade como Numero
-var idade = 28;
+var idade = 21;
 console.log(idade + 1)
 
 //Transforma idade em String
-var idade = 28;
+var idade = 21 ;
 console.log(idade.toString() + 1);

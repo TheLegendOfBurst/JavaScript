@@ -37,7 +37,7 @@ var number = Number(new Date());
 console.log(typeof number, number);
 
 // Converter de string(TEXTO) para numero INTEIRO usando o parseInt
-var n = '21.23'
+var n = '25.23'
 console.log(typeof n, n)
 console.log(typeof parseInt(n), parseInt(n))
 

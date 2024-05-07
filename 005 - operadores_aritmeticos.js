@@ -49,3 +49,12 @@ console.log("A multiplicação é: "+multipicacao)
 console.log("A multiplicação é:",v7*v8)
 console.log("A multiplicação é: "+parseInt(v7*v8))
 console.log("A multiplicação é: "+Number(v7*v8))
+
+// RestoDivisão
+let v9 = 10;
+let v10 = 5;
+let restodivisao = v9 % v10;
+console.log("O restodivisão é: " + restodivisao);
+console.log("O restodivisão é:", restodivisao);
+console.log("O restodivisão é: " + parseInt(restodivisao));
+console.log("O restodivisão é: " + Number(restodivisao));
