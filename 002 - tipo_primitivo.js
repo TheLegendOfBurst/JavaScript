@@ -1,19 +1,19 @@
-/** Tiposde variavel 
- *
- *string 
- * Number
- * Boolean
- * Null
- * Underfine
+/*
+TIPOS PRIMITIVOS
+    String
+    Number
+    Boolean
+    Object - Null
+    Undefine
 */
 
-var nome = "davi";
-var numero = 21;
-var letra = 'D';
+var nome = 'Davi';
+var numero = 1234;
+var letra  = "D";
 var decimal = 1234.1234;
 var logico = true;
 var vnull = null;
-var indefinido;
+var indefinida;
 
 console.log(typeof nome, nome);
 console.log(typeof numero, numero);
@@ -21,4 +21,4 @@ console.log(typeof letra, letra);
 console.log(typeof decimal, decimal);
 console.log(typeof logico, logico);
 console.log(typeof vnull, vnull);
-console.log(typeof indefinido, indefinido);
+console.log(typeof indefinida, indefinida);
