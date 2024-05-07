@@ -1,26 +1,55 @@
-const n3 = 'Constante'
-var n1;
-let n2;
+const n3 = 'Constante';//
+let nome2;//
+var nome1;//
 
 /*
-var n4 = "Davi";
-if (true)
-{
-    var n5 = "Rabelo";
-}
-var n6 = "Giani";
-console.log(n4,n5,n6)
+*****
+VAR - VARIAVEL GLOBAL
+Aceita SOBREESCRITA, Aceita RE-DECLARAÇÃO, CHAMAR EM QUALQUER LUGAR DO CODIGO
+*****
+var n1 = 'Davi';
+if(true){
+    var n1 = 'Rabelo'
+};   
+var n1 = 'Giani';
+console.log(n1);
 */
 
-/*Let - variavel de escopo
+/*
+*****
+LET - VARIAVEL DE ESCOPO
+Aceita SOBREESCRITA, NÃO Aceita RE-DECLARAÇÃO, Só visivel dentro do seu bloco de codigo, 
+Aceita vizualizar variaveis globais  
+*****
+let n2 = 'Davi';
+if(true){
+   console.log(n2)
+};   
 
-let nome = "Davi"
-if (true)
-{
-    let nome = "Rabelo"
-    console.log(nome)
-}
+if(true){
+    let n2 = 'Davi'
+    console.log(n2)
+};   
+
+let n2 = 'Rabelo';
+if(true){
+    n2 = 'Giani'
+   console.log(n2)
+}; 
 */
 
-//Constante - 
+/*
+*****
+CONST -  VARIAVEL DE ESCOPO
+NÃO Aceita SOBREESCRITA, NÃO Aceita RE-DECLARAÇÃO, Deve ser inicializada com conteudo,
+*****
+const n3 = 'Davi';
+if(true){
+   console.log(n3)
+};   
 
+if(true){
+    const n3 = 'Davi'
+    console.log(n3)
+};   
+*/
