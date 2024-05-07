@@ -31,7 +31,7 @@ if(true){
     console.log(n2)
 };   
 
-let n2 = 'Rabelo';
+let n2 = 'Davi';
 if(true){
     n2 = 'Giani'
    console.log(n2)
