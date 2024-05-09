@@ -43,4 +43,3 @@ let array5 = [1, 2, 3, 4, 5];
 // array5.splice(index, deleteNumbers)
 array5.splice(2, 1)
 console.log(array5)// Saida: [1, 2, 4, 5]
-console.log(arraylength)
