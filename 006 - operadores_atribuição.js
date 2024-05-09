@@ -31,24 +31,24 @@ console.log(valor2)
     /=
 */
 //INCREMENTO
-let valor  = 2;
-console.log(valor)
+let valor3  = 2;
+console.log(valor3)
 valor += 1
-console.log(valor)
+console.log(valor3)
 
 //DESCREMENTO
-let valor2 = 3
-console.log(valor2)
-valor2 -= 1
-console.log(valor2)
+let valor4 = 3
+console.log(valor4)
+valor4 -= 1
+console.log(valor4)
 
 //atribuição de multiplicação
-let valor3 = 4;
-valor3 *= 2; // Equivalente a: valor3 = valor3 * 2;
-console.log(valor3); // Saída: 8
+let valor5 = 4;
+valor5 *= 2; // Equivalente a: valor3 = valor3 * 2;
+console.log(valor5); // Saída: 8
 
 //atribuição de divisão
-let valor4 = 4;
-valor4 /= 2; // Equivalente a: valor3 = valor3 / 2;
-console.log(valor4); // Saída: 2
+let valor6 = 4;
+valor6 /= 2; // Equivalente a: valor3 = valor3 / 2;
+console.log(valor6); // Saída: 2
 	
