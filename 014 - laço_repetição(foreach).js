@@ -41,19 +41,19 @@ numeros2.forEach(function(numero, indice, array) {
 console.log('Números dobrados:', numeros2);
 // Saída: Números dobrados: [2, 4, 6, 8, 10]
 
-const numeros1 = [1, 2, 3, 4, 5];
+const numeros1 = [3, 6, 9, 12, 15];
 
 numeros1.forEach(function(numero, indice, array) {
-    array[indice] = numero * 2;
+    array[indice] = numero * 4;
 });
 
 console.log('Números dobrados:', numeros1);
 // Saída: Números dobrados: [2, 4, 6, 8, 10]
 
 const pessoas = [
-    { nome: 'João', idade: 30 },
-    { nome: 'Maria', idade: 25 },
-    { nome: 'Ana', idade: 35 }
+    { nome: 'Arthur', idade: 42 },
+    { nome: 'Rodrigo', idade: 65 },
+    { nome: 'Davi', idade: 21 }
 ];
 
 pessoas.forEach(function(pessoa) {
@@ -61,9 +61,9 @@ pessoas.forEach(function(pessoa) {
 });
 
 // Saída:
-// Nome: João | Idade: 30
-// Nome: Maria | Idade: 25
-// Nome: Ana | Idade: 35
+// Nome: Arthur | Idade: 42
+// Nome: Rodrigo | Idade: 65
+// Nome: Davi | Idade: 21
 
 const matriz = [
     [1, 2, 3],
