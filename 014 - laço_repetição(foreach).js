@@ -64,20 +64,3 @@ pessoas.forEach(function(pessoa) {
 // Nome: Arthur | Idade: 42
 // Nome: Rodrigo | Idade: 65
 // Nome: Davi | Idade: 21
-
-const matriz = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-];
-
-matriz.forEach(function(linha) {
-    let soma = linha.reduce((acc, valor) => acc + valor, 0);
-    console.log('Soma da linha:', soma);
-});
-
-// Saída:
-// Soma da linha: 6
-// Soma da linha: 15
-// Soma da linha: 24
-
