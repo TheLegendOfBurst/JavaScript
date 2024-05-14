@@ -30,55 +30,109 @@ class MinhaClasse {
     constructor(parametros) {
         this.propriedade = valor;
     }
-
+  
     metodo() {
         // corpo do método
     }
-}
-
-//HERANÇA
-class Animal {
-    comer() {
-        console.log("Comendo...");
+  }
+  
+  class Animal {
+    constructor(nome, idade) {
+        this.nome = nome;
+        this.idade = idade;
     }
-}
-
-class Cachorro1 extends Animal {
+  
+    comer() {
+        console.log(`${this.nome} está comendo...`);
+    }
+  }
+  //HERANÇA
+  class Cachorro extends Animal {
+    constructor(nome, idade, raca) {
+        super(nome, idade);
+        this.raca = raca;
+    }
+  
     latir() {
         console.log("Au Au!");
     }
-}
-/* 
+  }
+  
+  /* 
    O método super é usado dentro de uma classe filha para chamar métodos da classe pai.
    Ele é usado no construtor para chamar o construtor da classe pai.
-*/
-
-class Cachorro extends Animal {
+  */
+  
+  class Cachorro1 extends Animal {
     constructor(nome) {
         super();
         this.nome = nome;
     }
-}
-
-
-/*  
+  }
+  // Exemplo de uso
+  const rex = new Cachorro("Rex", 3, "Golden Retriever");
+  
+  // Imprimir propriedades do cachorro
+  console.log("Nome:", rex.nome); // Saída: Nome: Rex
+  console.log("Idade:", rex.idade); // Saída: Idade: 3
+  console.log("Raça:", rex.raca); // Saída: Raça: Golden Retriever
+  
+  rex.nome = "TROVAO"
+  rex.idade = 10
+  rex.raca = "Fila Brasileiro"
+  
+  // Imprimir propriedades do cachorro
+  console.log("Nome:", rex.nome); 
+  console.log("Idade:", rex.idade); 
+  console.log("Raça:", rex.raca); 
+  /*  
     Getters são usados para obter o valor de uma propriedade.
     Setters são usados para definir o valor de uma propriedade.
     Eles são definidos usando as palavras-chave get e set.
-*/
-
-class Retangulo {
+  */
+  
+  class Retangulo {
     constructor(largura, altura) {
         this.largura = largura;
         this.altura = altura;
     }
-
+  
     get area() {
         return this.largura * this.altura;
     }
-
+  
     set area(valor) {
         this.largura = Math.sqrt(valor);
         this.altura = Math.sqrt(valor);
     }
-}
+    
+  }
+  
+  const rtl = new Retangulo(2, 1.5)
+  console.log("A area do retangulo e:",rtl.area) 
+  
+  
+  const rtl2 = new Retangulo(5, 2)
+  console.log("A area do retangulo e:",rtl2.area)
+  
+  // Método estático
+  class Utilidades {
+    static somar(a, b) {
+      return a + b;
+    }
+  }
+  
+  
+        
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
