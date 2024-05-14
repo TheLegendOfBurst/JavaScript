@@ -116,3 +116,118 @@ console.log(`O total do produto ${Celular.nome} é ${Celular.total}`)
 console.log("")
 
 //5
+class Carro {
+    constructor(marca, modelo, ano) {
+      this.marca = marca;
+      this.modelo = modelo;
+      this.ano = ano;
+    }
+  
+    exibirInformacoes() {
+      return `Marca: ${this.marca}, Modelo: ${this.modelo}, Ano: ${this.ano}`;
+    }
+  }
+  
+  // Exemplo de uso:
+  let meuCarro = new Carro('Toyota', 'Corolla', 2022);
+  console.log(meuCarro.exibirInformacoes()); // Saída: Marca: Toyota, Modelo: Corolla, Ano: 2022
+  console.log("")
+
+  //6.Crie uma classe Aluno com propriedades nome, matricula, notas (array) e um método para calcular a média das notas.
+class Aluno {
+    constructor(nome, matricula, notas) {
+        this.nome = nome
+        this.matricula = matricula
+        this.notas = notas
+        }
+        calcularMedia() {
+            let soma = 0
+            for (let i = 0; i < this.notas.length; i++) {
+                soma += this.notas[i]
+            }
+            return soma / this.notas.length
+        }
+}
+const Aluno1 = new Aluno('Davi', 742174, [10, 100, 85, 25, 68])
+console.log(`A média do aluno ${Aluno1.nome} é ${Aluno1.calcularMedia()}`)
+console.log("")
+
+//7.
+class Animal {
+    constructor(nome, tipo) {
+      this.nome = nome;
+      this.tipo = tipo;
+    }
+  
+    exibirInformacoes() {
+      console.log(`Nome: ${this.nome}, Tipo: ${this.tipo}`);
+    }
+  }
+  
+  // Exemplo de uso da classe Animal
+  const meuAnimal = new Animal("Baleia", "Mamífero");
+  meuAnimal.exibirInformacoes(); // Saída: Nome: Leão, Tipo: Mamífero
+  console.log("")
+
+  //8
+  class Triangulo {
+    constructor(lado1, lado2, lado3) {
+      this.lado1 = lado1;
+      this.lado2 = lado2;
+      this.lado3 = lado3;
+    }
+  
+    calcularArea() {
+      const s = (this.lado1 + this.lado2 + this.lado3) / 2;
+      return Math.sqrt(s * (s - this.lado1) * (s - this.lado2) * (s - this.lado3));
+    }
+  
+    calcularPerimetro() {
+      return this.lado1 + this.lado2 + this.lado3;
+    }
+  }
+  
+  // Exemplo de uso da classe Triangulo
+  const meuTriangulo = new Triangulo(3, 4, 5);
+  console.log("Área do triângulo:", meuTriangulo.calcularArea()); // Saída: Área do triângulo: 6
+  console.log("Perímetro do triângulo:", meuTriangulo.calcularPerimetro()); // Saída: Perímetro do triângulo: 12
+  console.log("")
+
+  //9
+  class Livro {
+    constructor(titulo, autor, ano) {
+      this.titulo = titulo;
+      this.autor = autor;
+      this.ano = ano;
+    }
+  
+    exibirInformacoes() {
+      return `titulo: ${this.titulo}, autor: ${this.autor}, Ano: ${this.ano}`;
+    }
+  }
+  
+  // Exemplo de uso:
+  let meuLivro = new Livro('A Torre Negra', 'Stephen king', '1982 - 2004');
+  console.log(meuLivro.exibirInformacoes()); // Saída: titulo: Toyota, autor: Corolla, Ano: 2022
+  console.log("")
+  
+  //10
+  class Circulo {
+    constructor(raio) {
+      this.raio = raio;
+    }
+  
+    calcularArea() {
+      return Math.PI * this.raio ** 2;
+    }
+  
+    calcularPerimetro() {
+      return 2 * Math.PI * this.raio;
+    }
+  }
+  
+  // Exemplo de uso da classe Circulo
+  const meuCirculo = new Circulo(5);
+  console.log("Área do círculo:", meuCirculo.calcularArea()); // Saída: Área do círculo: 78.53981633974483
+  console.log("Perímetro do círculo:", meuCirculo.calcularPerimetro()); // Saída: Perímetro do círculo: 31.41592653589793
+  
