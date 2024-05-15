@@ -72,17 +72,101 @@ livro.informacoes();
 console.log("")
 
 //Exercício 3: Lista de Compras. Crie um objeto literal que represente uma lista de compras, onde cada item da lista é uma propriedade com o nome do item e a quantidade desejada.
-let listaDeCompras = {
-    "arroz": 2, // quantidade desejada de arroz
-    "feijao": 3, // quantidade desejada de feijão
-    "macarrao": 1, // quantidade desejada de macarrão
-    "leite": 4, // quantidade desejada de leite
-    "ovos": 12 // quantidade desejada de ovos
-};
+var ListaCompras = {
+    "Arroz": 2,
+    "Feijão": 1,
+    "Macarrão": 1,
+    "Oleo": 3,
+    "Papel Higienico": 1,
+    "Detergente": 2,
+    "Frango": 2
+}
 
+for (let item in ListaCompras) {
+    if (typeof ListaCompras[item] !== 'function') {
+        console.log(item + ": " + ListaCompras[item]);
+    }
+}   
+console.log("")
 
 //Exercício 4: Adição e Remoção de Itens. Adicione métodos ao objeto lista de compras para adicionar um novo item à lista e remover um item existente.
+var ListaCompras = {
+    "Arroz": 2,
+    "Feijão": 1,
+    "Macarrão": 1,
+    "Oleo": 3,
+    "Papel Higienico": 1,
+    "Detergente": 2,
+    "Frango": 2,
+    adicionarItem(item, quantidade) {
+        this[item] = quantidade;
+        console.log(item + " adicionado a lista \n")
+    },
+    removerItem(item) {
+        delete this[item];
+        console.log(item + " removido da lista \n")
+    }
+}
+//Lista
+for (let item in ListaCompras) {
+    if (typeof ListaCompras[item] !== 'function') {
+        console.log(item + ": " + ListaCompras[item]);
+    }
+}
+console.log("");
 
+//Adiciconar e Remover
+ListaCompras.adicionarItem("Sabonete", 10);
+ListaCompras.removerItem("Macarrão");
 
+//Lista Apos
+for (let item in ListaCompras) {
+    if (typeof ListaCompras[item] !== 'function') {
+        console.log(item + ": " + ListaCompras[item]);
+    }
+}
+console.log("");
 
-//5
+//Exercício 5: Total da Compra. Adicione um método ao objeto lista de compras para calcular o valor total da compra, 
+//com base na quantidade desejada de cada item e seus preços individuais.
+var ListaCompras = {
+    valor: 0,
+    adicionarItem(item, quantidade, preco) {
+        this[item] = quantidade;
+        this.valor += quantidade * preco
+    },
+    removerItem(item, preco) {
+        delete this[item];
+        this.valor -= this[item] * preco
+    }
+}
+//Adicionando Itens Na lista
+ListaCompras.adicionarItem("Arroz", 2, 30.50);
+ListaCompras.adicionarItem("Feijão", 1, 15.20);
+ListaCompras.adicionarItem("Macarrão", 1, 3);
+ListaCompras.adicionarItem("Oleo", 3, 8.30);
+ListaCompras.adicionarItem("Papel Higienico", 1, 25.50);
+ListaCompras.adicionarItem("Detergente", 2, 3.2);
+ListaCompras.adicionarItem("Frango", 2, 10.99);
+
+//Lista com Valor Total: 
+console.log("Lista com Valor Total apos Adição: ");
+for (let item in ListaCompras) {
+    if (typeof ListaCompras[item] !== 'function') {
+        console.log(item + ": " + ListaCompras[item]);
+    }
+}
+console.log("");
+
+//Removendo Itens na lista
+ListaCompras.removerItem("Detergente", 3.2);
+ListaCompras.removerItem("Frango", 10.99);
+
+//Lista com Valor Total: 
+console.log("Lista com Valor Total apos Remoção: ");
+for (let item in ListaCompras) {
+    if (typeof ListaCompras[item] !== 'function') {
+        console.log(item + ": " + ListaCompras[item]);
+    }
+}
+console.log("");
