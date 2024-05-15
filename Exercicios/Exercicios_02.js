@@ -226,7 +226,6 @@ let registroFuncionarios1 = {
     }
 };
 
-// Exemplo de uso:
 registroFuncionarios1.adicionarFuncionario({
     nome: "João Silva",
     cargo: "Desenvolvedor",
@@ -239,3 +238,45 @@ registroFuncionarios1.removerFuncionario("Tiago Ventura");
 
 console.log(registroFuncionarios1.funcionarios);
 console.log("")
+
+/*Exercício 8: Aumento de Salário Adicione um método ao objeto registro de funcionários para aumentar o salário de todos os funcionários
+em uma certa porcentagem.*/
+let registroFuncionarios2 = {
+    funcionarios: [
+        {
+            nome: "Davi Giani",
+            cargo: "Analista de Sistemas",
+            salario: 5000
+        },
+        {
+            nome: "Arthur Sampaia",
+            cargo: "Gerente de Vendas",
+            salario: 7000
+        },
+        {
+            nome: "Tiago Ventura",
+            cargo: "Filho do Arthur",
+            salario: 0
+        }
+    ],
+    aumentarSalario: function(porcentagem) {
+        this.funcionarios.forEach(funcionario => {
+            funcionario.salario = funcionario.salario + (funcionario.salario * porcentagem);
+        });
+    }
+    };
+    
+    registroFuncionarios2.aumentarSalario(0.1);
+    
+    console.log(registroFuncionarios2.funcionarios);
+console.log("")
+
+/*Exercício 9: Contato Crie um objeto literal que represente um contato, com propriedades como nome, email e telefone.*/
+
+let contato = {
+    nome: "Davi",
+    email: "davi.giani@aluno.senai.br",
+    telefone: "61 98102-9644"
+};
+
+console.log(contato);
