@@ -266,7 +266,7 @@ let registroFuncionarios2 = {
     }
     };
     
-    registroFuncionarios2.aumentarSalario(0.1);
+    registroFuncionarios2.aumentarSalario(10);
     
     console.log(registroFuncionarios2.funcionarios);
 console.log("")
@@ -280,3 +280,56 @@ let contato = {
 };
 
 console.log(contato);
+
+/*Exercício 10: Lista de Contatos Crie um array de objetos literais que representem uma lista de contatos.
+Cada objeto deve ter as mesmas propriedades definidas no exercício anterior. Adicione métodos para adicionar um novo contato à lista, 
+remover um contato existente e buscar um contato pelo nome.*/
+let listaContatos = {
+    contatos: [
+    {
+        nome: "Davi",
+        email: "davi.giani@aluno.senai.br",
+        telefone: "61 98102-9644"
+    },
+    {
+        nome: "Arthur",
+        email: "arthur.sampaia@aluno.senai.br",
+        telefone: "61 99999-9999"
+    },
+    {
+        nome: "Tiago",
+        email: "tiago.ventura@aluno.senai.br",
+        telefone: "61 98888-8888"
+    }
+    ],
+    // Função para adicionar um novo contato à lista
+    adicionarContato: function(contato) {
+        this.contatos.push(contato);
+    },
+    // Função para remover um contato da lista pelo nome
+    removerContato: function(nome) {
+        this.contatos = this.contatos.filter(contato => contato.nome!== nome);
+    },
+    // Função para buscar um contato na lista pelo nome
+    buscarContato: function(nome) {
+        return this.contatos.find(contato => contato.nome === nome);
+    }
+}
+
+
+// Adicionando um novo contato
+listaContatos.adicionarContato({
+    nome: "João",
+    email: "joao.silva@aluno.senai.br",
+    telefone: "61 98102-9466"
+});
+
+console.log(listaContatos.contatos);
+
+// Removendo um contato
+listaContatos.removerContato("Tiago");
+
+console.log(listaContatos.contatos);
+
+// Buscando um contato pelo nome
+console.log(listaContatos.buscarContato("João"));
