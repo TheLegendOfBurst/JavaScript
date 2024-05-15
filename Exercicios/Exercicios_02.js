@@ -127,8 +127,8 @@ for (let item in ListaCompras) {
 }
 console.log("");
 
-//Exercício 5: Total da Compra. Adicione um método ao objeto lista de compras para calcular o valor total da compra, 
-//com base na quantidade desejada de cada item e seus preços individuais.
+/*Exercício 5: Total da Compra. Adicione um método ao objeto lista de compras para calcular o valor total da compra, 
+com base na quantidade desejada de cada item e seus preços individuais.*/
 var ListaCompras = {
     valor: 0,
     adicionarItem(item, quantidade, preco) {
@@ -136,8 +136,9 @@ var ListaCompras = {
         this.valor += quantidade * preco
     },
     removerItem(item, preco) {
+        let quantidade = this[item]; // Capture a quantidade antes de deletar
         delete this[item];
-        this.valor -= this[item] * preco
+        this.valor -= quantidade * preco;
     }
 }
 //Adicionando Itens Na lista
@@ -170,3 +171,71 @@ for (let item in ListaCompras) {
     }
 }
 console.log("");
+
+/*Exercício 6: Registro de Funcionários Crie um objeto literal que represente um registro de funcionários,
+onde cada funcionário é representado por um objeto com propriedades como nome, cargo e salário.*/
+let registroFuncionarios = {
+    funcionarios: [
+        {
+            nome: "Davi Giani",
+            cargo: "Analista de Sistemas",
+            salario: 5000
+        },
+        {
+            nome: "Arthur Sampaia",
+            cargo: "Gerente de Vendas",
+            salario: 7000
+        },
+        {
+            nome: "Tiago Ventura",
+            cargo: "Filho do Arthur",
+            salario: 0
+        }
+    ]
+};
+registroFuncionarios.funcionarios.forEach(funcionario => {
+    console.log(`Nome: ${funcionario.nome}, Cargo: ${funcionario.cargo}, Salário: ${funcionario.salario}`);
+});
+console.log("")
+
+/*Exercício 7: Adição de Funcionários Adicione métodos ao objeto registro de funcionários para adicionar um novo funcionário ao registro
+e remover um funcionário existente.*/
+let registroFuncionarios1 = {
+    funcionarios: [
+        {
+            nome: "Davi Giani",
+            cargo: "Analista de Sistemas",
+            salario: 5000
+        },
+        {
+            nome: "Arthur Sampaia",
+            cargo: "Gerente de Vendas",
+            salario: 7000
+        },
+        {
+            nome: "Tiago Ventura",
+            cargo: "Filho do Arthur",
+            salario: 0
+        }
+    ],
+    adicionarFuncionario: function(funcionario) {
+        this.funcionarios.push(funcionario);
+    },
+    removerFuncionario: function(nome) {
+        this.funcionarios = this.funcionarios.filter(funcionario => funcionario.nome!== nome);
+    }
+};
+
+// Exemplo de uso:
+registroFuncionarios1.adicionarFuncionario({
+    nome: "João Silva",
+    cargo: "Desenvolvedor",
+    salario: 6000
+});
+
+console.log(registroFuncionarios1.funcionarios);
+
+registroFuncionarios1.removerFuncionario("Tiago Ventura");
+
+console.log(registroFuncionarios1.funcionarios);
+console.log("")
