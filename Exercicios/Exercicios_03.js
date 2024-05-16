@@ -39,7 +39,7 @@ function soma(a,b){
 };
 
 console.log('A soma é: ' + soma(2,3));
-console.log('')
+console.log("")
 
 //Exercicio 2: Defina uma função chamada saudacao que imprime "Olá, mundo!" no console e não tem nenhum parâmetro nem retorno.
 function saudacao(){
@@ -60,7 +60,7 @@ function verificarPar(numero){
 
 console.log(verificarPar(2));
 console.log(verificarPar(3));
-console.log('')
+console.log("")
 
 //Exercicio 4: Crie uma função chamada calcularAreaCirculo que aceita o raio de um círculo como parâmetro e retorna a área do círculo.
 function calcularAreaCirculo(raio){
@@ -68,7 +68,7 @@ function calcularAreaCirculo(raio){
 };
 
 console.log('A área do círculo é: ' + calcularAreaCirculo(2));
-console.log('')
+console.log("")
 
 //Exercicio 5: Defina uma função chamada retornarDataAtual que não aceita nenhum parâmetro e retorna a data atual.
 function retornarDataAtual(){
@@ -76,7 +76,7 @@ function retornarDataAtual(){
 };
 
 console.log(retornarDataAtual());
-console.log('');
+console.log("");
 
 //Exercicio 6: Escreva uma função chamada calcularMedia que recebe um array de números como parâmetro e retorna a média desses números.
 function calcularMedia(array){
@@ -88,7 +88,7 @@ function calcularMedia(array){
 };
 
 console.log('A média é: ' + calcularMedia([5,5,6,6,4]));
-console.log('')
+console.log("")
 
 //Exercicio 7: Crie uma função chamada adicionarDois que aceita um número como parâmetro e retorna esse número adicionado a 2.
 function adicionarDois(numero){
@@ -96,7 +96,7 @@ function adicionarDois(numero){
 };
 
 console.log(adicionarDois(2));
-console.log('')
+console.log("")
 
 //Exercicio 8: Defina uma função chamada concatenarStrings que recebe duas strings como parâmetros e retorna uma nova string 
 //que é a concatenação das duas strings fornecidas.
@@ -105,7 +105,7 @@ function concatenarPalavras(palavra1, palavra2){
 };
 
 console.log(concatenarPalavras('Olá', 'Mundo'));
-console.log('');
+console.log("");
 
 //Exercicio 9: Escreva uma função chamada verificarNegativo que recebe um número como parâmetro e retorna verdadeiro se 
 //o número for negativo e falso caso contrário.
@@ -114,7 +114,7 @@ function verificarNegativo(numero){
 };
 
 console.log(verificarNegativo(-1));
-console.log('');
+console.log("");
 
 //Exercicio 10: Crie uma função chamada removerEspacos que recebe uma string como parâmetro e retorna a mesma string sem espaços em branco.
 function removerEspacos(palavra){
@@ -122,4 +122,4 @@ function removerEspacos(palavra){
 };
 
 console.log(removerEspacos("Olá Mundo!"));
-console.log('');
+console.log("");
