@@ -1,0 +1,21 @@
+{
+  "name": "jogo-mario",
+  "version": "1.0.0",
+  "main": "mario.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "davi",
+  "license": "ISC",
+  "keywords": [
+    "w",
+    "a",
+    "s",
+    "d",
+    "space"
+  ],
+  "description": "",
+  "dependencies": {
+    "phaser": "^3.80.1"
+  }
+}
